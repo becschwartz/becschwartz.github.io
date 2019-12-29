@@ -280,7 +280,7 @@ hr {
   color: white;
   overflow-y: hidden;
 }
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1257px) {
   .sidebar-menu {
     overflow-y: scroll;
     width: 30%;
@@ -357,18 +357,18 @@ h3.profile-title {
   background: #5f6d7e;
   text-align: center;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .responsive-header .main-navigation {
     margin-top: 10px;
     display: none;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .responsive-header p {
     color: white;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .responsive-header .profile-image {
     float: left;
     width: 100px;
@@ -385,13 +385,13 @@ h3.profile-title {
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .top-section {
     padding-bottom: 0;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .main-navigation a {
     padding: 10px;
   }
@@ -423,7 +423,7 @@ h3.profile-title {
 .banner-bg {
   padding: 260px 80px;
   position: relative;
-  background: url("../img/7.jpg");
+  background: url("yosemite.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
