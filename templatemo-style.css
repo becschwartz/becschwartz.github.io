@@ -224,13 +224,13 @@ h1, h2, h3, h4, h5 {
   float: right;
   width: 77%;
 }
-@media screen and (max-width: 1290px) {
+@media screen and (max-width: 1257px) {
   .main-content,
   .banner-bg {
     width: 70%;
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .main-content,
   .banner-bg {
     width: 100%;
@@ -240,7 +240,7 @@ h1, h2, h3, h4, h5 {
 .content-wrapper {
   padding: 0 80px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 943px) {
   .content-wrapper {
     padding: 0 30px;
   }
