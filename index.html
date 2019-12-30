@@ -1,3 +1,20 @@
+<?php
+
+if($_POST["submit"]) {
+    $recipient="hello@becschwartz.com";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
+}
+?>
+
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -206,8 +223,34 @@
                     </div>
                     
                 <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=hello@becschwartz.com&tf=1">Email Me</a>
-            
+                        
+                        
+                <head>
+                    <meta charset="utf-8">
+                    <title>Contact form to email</title>
+                </head>
+
+                <body>
+
+                    <?=$thankYou ?>
+
+                    <form method="post" action="contact.php">
+                        <label>Name:</label>
+                        <input name="sender">
+
+                        <label>Email address:</label>
+                        <input name="senderEmail">
+
+                        <label>Message:</label>
+                        <textarea rows="5" cols="20" name="message"></textarea>
+
+                        <input type="submit" name="submit">
+                    </form>
+
+                </body>                        
          
+                        
+                        
                     <div class="row">
                     </div> <!-- .contact-form -->
                     </div>
